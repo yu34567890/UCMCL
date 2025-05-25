@@ -14,7 +14,7 @@ lua.execute('os = nil')
 lua.execute('io = nil')
 
 keywords = {
-    "init_var": 1,     # gets 1 arg
+    "var": 1,     # gets 1 arg
     "add": 3,          
     "sub": 3,          
     "goto": 1,
@@ -115,7 +115,7 @@ def transpile(code: str) -> None:
     result = ""
     while i < len(tokenized):
         current = tokenized[i]
-        if current[0] == "init_var":
+        if current[0] == "var":
             if tokenized[i+1][0] != 'identifier':
                 print('expected identifier got ' + tokenized[i+1][0])
                 sys.exit(1)
