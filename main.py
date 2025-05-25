@@ -17,7 +17,7 @@ keywords = {
     "init_var": 1,     # gets 1 arg
     "add": 3,          
     "sub": 3,          
-    "jmp": 1,
+    "goto": 1,
     "cmp": 2,       
     "ret": 0,
     "call": 1,   
