@@ -1,0 +1,6 @@
+init_var a
+init_var b
+init_var c
+set a 1
+set b 2
+set c 3
